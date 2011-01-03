@@ -1,3 +1,0 @@
-// for fixture calls
-textArea.setSelectedText("$this->_fixture->");
-xml.XmlActions.insertClosingTagKeyTyped(view);
