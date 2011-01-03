@@ -1,0 +1,8 @@
+// This is partiall broken. it doesn't account for more than 1 whitespace
+SearchAndReplace.setSearchString("\\/\\/ (\\w.*?\\(.*?\\))$");
+SearchAndReplace.setReplaceString("public function $1\\n\\t{\\n\\t\\t\\n\\t}");
+SearchAndReplace.setBeanShellReplace(false);
+SearchAndReplace.setIgnoreCase(true);
+SearchAndReplace.setRegexp(true);
+SearchAndReplace.setSearchFileSet(new CurrentBufferSet());
+SearchAndReplace.replaceAll(view);

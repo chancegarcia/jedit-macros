@@ -1,0 +1,8 @@
+// expand UML get skeleton syntax to create corresponding set syntax
+SearchAndReplace.setSearchString("(\\+ get(\\w.+?)$)");
+SearchAndReplace.setReplaceString("$1\\n\\t\\+ set$2");
+SearchAndReplace.setBeanShellReplace(false);
+SearchAndReplace.setIgnoreCase(true);
+SearchAndReplace.setRegexp(true);
+SearchAndReplace.setSearchFileSet(new CurrentBufferSet());
+SearchAndReplace.replaceAll(view);

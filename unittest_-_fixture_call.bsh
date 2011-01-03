@@ -1,0 +1,2 @@
+// for fixture calls
+textArea.setSelectedText("$this->_fixture->");

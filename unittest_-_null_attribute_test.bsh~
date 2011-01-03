@@ -1,0 +1,12 @@
+// create test for null attribute test
+textArea.insertEnterAndIndent();
+textArea.setSelectedText("$this->assertAttributeEquals(");
+textArea.insertEnterAndIndent();
+textArea.insertEnterAndIndent();
+textArea.setSelectedText(");");
+textArea.goToPrevLine(false);
+textArea.setSelectedText("null,");
+textArea.insertEnterAndIndent();
+textArea.setSelectedText("\"_\",");
+textArea.insertEnterAndIndent();
+textArea.setSelectedText("$this->_fixture");

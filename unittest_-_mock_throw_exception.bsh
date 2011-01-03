@@ -1,0 +1,19 @@
+// mock that throws an exception
+textArea.setSelectedText("$mock=$this->getMock(");
+textArea.insertEnterAndIndent();
+textArea.insertEnterAndIndent();
+textArea.setSelectedText(");");
+textArea.goToPrevLine(false);
+textArea.setSelectedText("\'\',");
+textArea.insertEnterAndIndent();
+textArea.setSelectedText("array(");
+textArea.insertEnterAndIndent();
+textArea.insertEnterAndIndent();
+textArea.setSelectedText(")");
+textArea.goToNextLine(false);
+textArea.insertEnterAndIndent();
+textArea.setSelectedText("$mock->expects($this->any())");
+textArea.insertEnterAndIndent();
+textArea.setSelectedText("->method(\'\')");
+textArea.insertEnterAndIndent();
+textArea.setSelectedText("->will($this->throwException(new _Tests_Exception(\'\')));");

@@ -1,0 +1,9 @@
+// searches for any testSet functions or stubs then creates stubs for initialization and 1 setter exception
+//
+SearchAndReplace.setSearchString("^(.*?(testSet(\\w*?\\b))[\\(\\)]?.*?)$");
+SearchAndReplace.setReplaceString("\\t// test$3AttributeInitializes\\n\\n\\t// testSet$3ThrowsExceptionFor\\n\\n$0");
+SearchAndReplace.setBeanShellReplace(false);
+SearchAndReplace.setIgnoreCase(false);
+SearchAndReplace.setRegexp(true);
+SearchAndReplace.setSearchFileSet(new CurrentBufferSet());
+SearchAndReplace.replaceAll(view);

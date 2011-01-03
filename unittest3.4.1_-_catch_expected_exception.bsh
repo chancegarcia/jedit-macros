@@ -1,0 +1,28 @@
+// try/catch for expected exceptions
+textArea.setSelectedText("try {");
+textArea.insertEnterAndIndent();
+textArea.insertEnterAndIndent();
+textArea.setSelectedText("} catch (Exception $e) {");
+textArea.insertEnterAndIndent();
+textArea.insertEnterAndIndent();
+textArea.setSelectedText("}");
+textArea.goToPrevLine(false);
+textArea.goToNextLine(false);
+textArea.insertEnterAndIndent();
+textArea.setSelectedText("$this->fail(\'expected exception not thrown\');");
+textArea.goToPrevLine(false);
+textArea.goToPrevLine(false);
+textArea.setSelectedText("if (\"\"==$e->getMessage())");
+textArea.insertEnterAndIndent();
+textArea.setSelectedText("{");
+textArea.insertEnterAndIndent();
+textArea.insertEnterAndIndent();
+textArea.setSelectedText("}");
+textArea.goToPrevLine(false);
+textArea.goToEndOfWhiteSpace(false);
+textArea.setSelectedText("return;");
+textArea.goToNextLine(false);
+textArea.goToNextLine(false);
+textArea.goToPrevLine(false);
+textArea.insertEnterAndIndent();
+textArea.setSelectedText("$this->fail(\'unexpected exception caught\');");
