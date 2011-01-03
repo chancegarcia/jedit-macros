@@ -1,4 +1,6 @@
 // try/catch for expected exceptions
+// indentation isn't working. or at least on my work editor that has some quirks. 
+//need to test elsewhere to determine if it's a localized issue
 textArea.setSelectedText("try {");
 textArea.insertEnterAndIndent();
 textArea.insertEnterAndIndent();
